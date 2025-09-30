@@ -1,0 +1,224 @@
+body {
+  font-family: 'Libre Baskerville', serif;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-navbar {
+  background-color: #697887;
+}
+
+.custom-navbar .navbar-brand {
+  color: #fff !important;
+  font-size: 1.5rem;
+}
+
+.custom-navbar .nav-link {
+  color: #f5f5f5 !important;
+  margin-left: 15px;
+  font-size: 1.1rem;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+  color: #0e2235 !important;
+}
+
+.custom-navbar .nav-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid #0e2235;
+}
+
+.nav-button {
+
+    background-color: #0e2235 !important; 
+    color: #fff !important;
+    padding: 8px 15px !important;
+    border-radius: 50px; 
+    margin-left: 15px;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #414c56!important; 
+}
+
+@media (max-width: 991.98px) {
+    .nav-button {
+        margin-top: 10px; 
+        margin-left: 0;
+        width: 100%; 
+        text-align: center;
+    }
+}
+.banner {
+  height: 100vh;
+  background: url('woman-parasol.jpg') center/cover no-repeat;
+  position: relative;
+  padding-top: 80px;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.banner .container {
+  position: relative;
+  z-index: 2;
+}
+
+.banner-text h1 {
+  font-size: 3rem;
+  color: #f8e1e7;
+  font-weight: bold;
+}
+
+.banner-text p {
+  font-size: 1.1rem;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.banner-right img {
+  max-height: 450px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.carousel-inner {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.btn-blue {
+  background-color: #fff;
+  color: #697887;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn-blue:hover {
+  background-color: #171d24;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card-img-top:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.card .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  text-align: center;
+  padding: 1rem;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.about-img img {
+  width: 450px;
+  height: 500px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.about-img img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.about-text {
+  color: #697887;
+}
+
+.about-text h5 {
+  font-size: 80%;
+}
+
+.visit-section {
+  background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+}
+
+.visit-card {
+  background: #697887;
+  color: #f5f5f5;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 991.98px) {
+  .banner {
+    height: auto;
+    padding: 120px 20px 60px;
+    text-align: center;
+  }
+
+  .banner-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .banner-text p {
+    font-size: 1rem;
+  }
+
+  .banner-right img {
+    max-height: 320px;
+  }
+
+  .about-img img {
+    width: 320px;
+    height: 360px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .banner-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .banner-text p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .banner-right img {
+    max-height: 250px;
+  }
+
+  .about-img img {
+    width: 220px;
+    height: 240px;
+    margin-bottom: 20px;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+}

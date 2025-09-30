@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palette of Dreams</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".custom-navbar" data-bs-offset="70" tabindex="0">
+
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Palette of Dreams</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#highlights">Spotlights</a></li>
+            <li class="nav-item"><a class="nav-link" href="#visit">Visit</a></li>
+            <li class="nav-item">
+              <a class="nav-link nav-button" href="registration.html">Login/Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="banner d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center g-4"> 
+          <div class="col-12 col-md-6 text-white banner-text text-center text-md-start">
+            <h1>The Artiste's Sanctuary</h1>
+            <p>
+              A curated space for the patrons of Impressionism and Post-Impressionism. Manage your journey through the worlds of Monet, Van Gogh, and beyond.
+            </p>
+            <a href="registration.html" class="btn btn-blue btn-lg mt-3">Become a Member</a>
+          </div>
+          <div class="col-12 col-md-6 banner-right text-center">
+            <div id="artCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="woman-parasol.jpg" class="img-fluid rounded shadow-lg" alt="Woman with a Parasol (1875)">
+                </div>
+                <div class="carousel-item">
+                  <img src="la-promenade.jpg" class="img-fluid rounded shadow-lg" alt="La Promenade, Argenteuil (1875)">
+                </div>
+                <div class="carousel-item">
+                  <img src="snow.jpg" class="img-fluid rounded shadow-lg" alt="Snow at Argenteuil (1875)">
+                </div>
+                <div class="carousel-item">
+                  <img src="giverny-springtime.jpg" class="img-fluid rounded shadow-lg" alt="Giverny in Springtime (1900)">
+                </div>
+                <div class="carousel-item">
+                  <img src="vetheuil.jpg" class="img-fluid rounded shadow-lg" alt="Vétheuil (1901)">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="highlights" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Artists Spotlights</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm position-relative overflow-hidden">
+              <img src="pathway.jpg" class="card-img-top" alt="Pathway in Monet's Garden at Giverny">
+              <div class="overlay">
+                <h5 class="overlay-text">Pathway in Monet's Garden at Giverny (Claude Monet)</h5>
+              </div>
+            </div>
+          </div>
+         
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm position-relative overflow-hidden">
+              <img src="artists-garden.jpg" class="card-img-top" alt="The Artist's Garden at Giverny">
+              <div class="overlay">
+                <h5 class="overlay-text">The Artist's Garden at Giverny (Claude Monet)</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm position-relative overflow-hidden">
+              <img src="nympheas-en-fleur.jpg" class="card-img-top" alt="Nympheas En Fleur">
+              <div class="overlay">
+                <h5 class="overlay-text">Nympheas En Fleur (Claude Monet)</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm position-relative overflow-hidden">
+              <img src="almond-blossom.jpg" class="card-img-top" alt="Almond Blossoms">
+              <div class="overlay">
+                <h5 class="overlay-text">Almond Blossoms (Vincent van Gogh)</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm position-relative overflow-hidden">
+              <img src="starry-night.jpg" class="card-img-top" alt="Starry Night">
+              <div class="overlay">
+                <h5 class="overlay-text">Starry Night (Vincent van Gogh)</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm position-relative overflow-hidden">
+              <img src="bulb-fields.jpg" class="card-img-top" alt="Bulb Fields">
+              <div class="overlay">
+                <h5 class="overlay-text">Bulb Fields (Vincent van Gogh)</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="visit" class="py-5 visit-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="visit-card shadow-lg text-center p-5 rounded-4">
+              <h2 class="mb-4 fw-bold">Visit the Museum</h2>
+              <p class="lead text-muted mb-1"><i class="bi bi-geo-alt-fill text-primary me-2"></i> Monet Museum, Paris, France</p>
+              <p class="mb-1"><i class="bi bi-clock-fill text-primary me-2"></i> <strong>Opening Hours:</strong> Mon – Sat, 10:00 AM – 6:00 PM</p>
+              <p class="mb-3"><i class="bi bi-ticket-perforated-fill text-primary me-2"></i> <strong>Tickets:</strong> Adults - €15 | Students - €10 | Children - Free</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal fade" id="welcomeModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center">
+          <div class="modal-header">
+            <h5 class="modal-title">Welcome</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h4 id="welcomeMessage"></h4>
+            <p>We’re glad to have you here! 🎉</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>   
+    <script>
+      const user = sessionStorage.getItem("loggedInUser");
+      const bookTicketsBtn = document.getElementById("bookTicketsLink");
+
+      if (user) {
+        bookTicketsBtn.href = "dashboard.html";
+        bookTicketsBtn.innerText = "Book Tickets";
+      } else {
+
+        bookTicketsBtn.href = "login.html";
+        bookTicketsBtn.innerText = "Login to Book Tickets";
+      }
+    </script>
+  </body>
+</html>

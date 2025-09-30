@@ -1,0 +1,135 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 100vh; 
+  width: 100%;
+  padding: 60px 20px; 
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-page .bg-image {
+  background-image: url('waterlilies.jpg');
+}
+
+.registration-page .bg-image {
+  background-image: url('pathway-garden.jpg'); 
+}
+
+.form-overlay {
+  background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.65));
+  color: #fff;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  animation: fadeInUp 0.8s ease;
+}
+
+.form-overlay h2 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.form-label, p {
+  font-family: 'EB Gramond', serif;
+}
+.form-overlay a {
+  color: #c2d8e7;
+  text-decoration: none;
+}
+
+.form-overlay a:hover {
+  text-decoration: underline;
+}
+
+.form-control, .form-select {
+  font-family: 'EB Garamond', serif;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+  transition: 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #697887;
+  box-shadow: 0 0 8px rgba(105,120,135,0.5);
+}
+
+.btn-blue {
+  font-family: 'EB Garamond', serif;
+  background: linear-gradient(135deg, #697887, #4f5e6d);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 20px;     
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.btn-blue:hover {
+  background: linear-gradient(135deg, #171d24, #2c3640);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+
+.register .form-overlay h2 {
+  color: #c2d8e7;
+}
+
+.login .form-overlay h2 {
+  color: #e7d2c2; 
+}
+
+.close-btn {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: #fff;
+      color: #333;
+      border: none;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      line-height: 1;
+    }
+    .error {
+      color: #ff6b6b;
+      font-size: 0.9rem;
+      margin-top: 5px;
+    }
+    
+@keyframes fadeInUp {
+  from { 
+    opacity: 0; 
+    transform: translateY(30px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+@media (max-width: 576px) {
+  .form-overlay {
+    padding: 20px;
+    max-width: 100%;
+  }
+}
